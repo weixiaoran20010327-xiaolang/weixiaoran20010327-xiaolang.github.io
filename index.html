@@ -92,6 +92,37 @@
       nav a { margin: 0 12px 0 0; }
       main { padding-top: 20px; }
     }
+.profile-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 650px) {
+    .profile-header {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .profile-photo {
+        width: 180px;
+        height: 220px;
+    }
+}
   </style>
 </head>
 
@@ -111,6 +142,8 @@
 
   <main>
     <header id="about">
+      <div class="profile-header">
+    <div class="profile-info">
       <h1>Xiaoran Wei</h1>
       <div class="subtitle">
         M.S. Student in Applied Mathematics<br>
@@ -131,6 +164,14 @@
           linear algebra, and machine learning algorithms.
         </p>
       </div>
+              </div>
+
+        <img src="profile.jpg"
+             alt="Portrait of Xiaoran Wei"
+             class="profile-photo">
+
+    </div>
+
     </header>
 
     <section id="education">
