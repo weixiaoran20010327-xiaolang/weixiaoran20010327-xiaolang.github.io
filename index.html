@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xiaoran Wei | Academic Homepage</title>
+  <style>
+    :root {
+      --navy: #17365d;
+      --text: #253143;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: white;
+    }
+    nav {
+      border-bottom: 1px solid var(--border);
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-inner {
+      max-width: 1050px;
+      margin: auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand { font-weight: bold; color: var(--navy); }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+    nav a:hover, a:hover { color: #2563eb; }
+    main { max-width: 950px; margin: auto; padding: 45px 24px; }
+    header { padding: 25px 0 40px; }
+    h1 { font-size: 38px; color: var(--navy); margin-bottom: 4px; }
+    h2 {
+      color: var(--navy);
+      font-size: 25px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+      margin-top: 48px;
+    }
+    h3 { margin-bottom: 4px; }
+    .subtitle { font-size: 18px; color: var(--muted); }
+    .intro { max-width: 800px; }
+    .entry { margin: 22px 0; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .date { color: var(--muted); font-size: 14px; }
+    .paper {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px;
+      margin: 18px 0;
+    }
+    .paper h3 { margin-top: 0; line-height: 1.4; }
+    .paper p { margin: 7px 0; }
+    .journal { color: var(--muted); font-style: italic; }
+    .contribution { margin-top: 12px !important; }
+    a { color: #1d4f91; }
+    footer {
+      text-align: center;
+      border-top: 1px solid var(--border);
+      padding: 25px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 650px) {
+      h1 { font-size: 30px; }
+      nav a { margin: 0 12px 0 0; }
+      main { padding-top: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-inner">
+      <div class="brand">Xiaoran Wei</div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header id="about">
+      <h1>Xiaoran Wei</h1>
+      <div class="subtitle">
+        M.S. Student in Applied Mathematics<br>
+        Northeastern University | Boston, MA
+      </div>
+
+      <div class="intro">
+        <p>
+          I am currently pursuing an M.S. in Applied Mathematics
+          at Northeastern University. I previously earned a
+          Master's degree in Electronic Information and a
+          Bachelor's degree in Electrical Engineering and
+          Automation from Fudan University.
+        </p>
+        <p>
+          My research interests include numerical optimization,
+          scientific computing, computational physics, numerical
+          linear algebra, and machine learning algorithms.
+        </p>
+      </div>
+    </header>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <strong>Northeastern University</strong>
+          <span class="date">2026 – Present</span>
+        </div>
+        M.S. in Applied Mathematics<br>
+        Boston, Massachusetts, USA
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <strong>Fudan University</strong>
+          <span class="date">2023 – 2026</span>
+        </div>
+        Master's Degree in Electronic Information<br>
+        Shanghai, China
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <strong>Fudan University</strong>
+          <span class="date">2019 – 2023</span>
+        </div>
+        B.Eng. in Electrical Engineering and Automation<br>
+        Shanghai, China
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research Interests</h2>
+      <p>
+        Numerical Optimization · Scientific Computing ·
+        Computational Physics · Monte Carlo Methods ·
+        Numerical Linear Algebra · Machine Learning
+      </p>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+
+      <article class="paper">
+        <h3>
+          Tuning charge delocalization for high performance
+          organic thermoelectrics
+        </h3>
+        <p><strong>Xiaoran Wei</strong>, Guanlin Wang,
+          Yong Cui, et al.</p>
+        <p class="journal">
+          Materials Today, 96, 103330 (2026)
+        </p>
+        <p><strong>First Author</strong></p>
+        <p class="contribution">
+          <strong>Contribution:</strong> Led and conducted the
+          research on charge delocalization and thermoelectric
+          performance in organic semiconductors.
+        </p>
+        <a href="https://doi.org/10.1016/j.mattod.2026.103330"
+           target="_blank" rel="noopener noreferrer">
+          View Publication →
+        </a>
+      </article>
+
+      <article class="paper">
+        <h3>
+          Observation of Spin–Orbit Coupled Polariton Vortices
+          at Room Temperature
+        </h3>
+        <p>Xiaokun Zhai, <strong>Xiaoran Wei</strong>,
+          Peilin Wang, et al.</p>
+        <p class="journal">
+          Nano Letters, 26, 4402–4409 (2026)
+        </p>
+        <p class="contribution">
+          <strong>Contribution:</strong> Performed all numerical
+          simulations and computational analysis of
+          spin–orbit coupled polariton vortices.
+        </p>
+        <a href="https://doi.org/10.1021/acs.nanolett.6c00048"
+           target="_blank" rel="noopener noreferrer">
+          View Publication →
+        </a>
+      </article>
+
+      <article class="paper">
+        <h3>
+          Universal Soft Coulomb Gap Governs Thermoelectric
+          Performance in Doped Conjugated Polymers
+        </h3>
+        <p>Yuqian Liu, <strong>Xiaoran Wei</strong>,
+          Dorothea Scheunemann, et al.</p>
+        <p class="journal">
+          ACS Energy Letters, 10, 6318–6326 (2025)
+        </p>
+        <p class="contribution">
+          <strong>Contribution:</strong> Conducted Monte Carlo
+          simulations to investigate the soft Coulomb gap
+          and charge transport in doped conjugated polymers.
+        </p>
+        <a href="https://doi.org/10.1021/acsenergylett.5c03040"
+           target="_blank" rel="noopener noreferrer">
+          View Publication →
+        </a>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2>Computational Projects</h2>
+
+      <div class="entry">
+        <h3>Least Squares Spectral Analysis (LSSA)</h3>
+        <p>
+          Frequency estimation and signal reconstruction
+          from irregularly sampled data using least squares,
+          variable projection, and L-BFGS optimization.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Numerical Linear Algebra</h3>
+        <p>
+          Implementations of singular value decomposition,
+          QR factorization, and fast Fourier transform algorithms.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Numerical Optimization</h3>
+        <p>
+          Implementations of Newton methods, BFGS, L-BFGS,
+          and nonlinear least squares optimization algorithms.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Xiaoran Wei · Academic Homepage
+  </footer>
+</body>
+</html>
