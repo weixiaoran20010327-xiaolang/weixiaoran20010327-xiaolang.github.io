@@ -123,6 +123,27 @@
         height: 220px;
     }
 }
+
+    .paper-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.paper-layout img {
+    flex-shrink: 0;
+}
+
+.paper-content {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 650px) {
+    .paper-layout {
+        flex-direction: column;
+    }
+}
   </style>
 </head>
 
@@ -240,6 +261,13 @@
       </article>
 
       <article class="paper">
+      <div class="paper-layout">
+      
+      <img src="nano_letters_fig2.png"
+     alt="Numerical simulations of spin-orbit coupled polariton vortices"
+     style="width: 320px; max-width: 100%; height: auto; border-radius: 8px;">
+
+        <div class="paper-content">
         <h3>
           Observation of Spin–Orbit Coupled Polariton Vortices
           at Room Temperature
@@ -258,6 +286,8 @@
            target="_blank" rel="noopener noreferrer">
           View Publication →
         </a>
+        </div>
+         </div>  
       </article>
 
       <article class="paper">
